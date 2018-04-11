@@ -12,5 +12,4 @@ ReactDOM.render(
   destination
 )
 
-// <App />, document.getElementById('root'));
-// registerServiceWorker();
+

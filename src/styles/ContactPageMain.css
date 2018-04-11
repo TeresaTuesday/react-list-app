@@ -49,3 +49,8 @@ ul.theList {
     background-color: pink;
     cursor: pointer;
 }
+
+h1 {
+    text-align: center;
+    color: darkgray;
+}

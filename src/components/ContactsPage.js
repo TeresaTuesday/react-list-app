@@ -50,18 +50,21 @@ export default class extends Component {
   
   render() {
     return (
-      <div className="ContactsPageMain">
-        <div className="header">
-          <form onSubmit={this.addContact}>
-            <input ref={(a) => this._inputElement = a}
-                   placeholder="enter item">
-            </input>
-            <button type="submit">Add</button>
-          </form>
-          <ToAddContacts entries={this.state.contacts}
-                          delete={this.deleteContact} />
-        </div>
-      
+      <div>
+        <h1>My List</h1>
+            <div className="ContactsPageMain">
+              <div className="header">
+                <form onSubmit={this.addContact}>
+                  <input ref={(a) => this._inputElement = a}
+                         placeholder="enter item">
+                  </input>
+                  <button type="submit">Add</button>
+                </form>
+                <ToAddContacts entries={this.state.contacts}
+                               delete={this.deleteContact}/>
+              </div>
+        
+            </div>
       </div>
     );
   }
